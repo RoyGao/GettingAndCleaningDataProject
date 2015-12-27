@@ -15,12 +15,14 @@ The R script **run_analysis.R** works as below to clean up the data:
 * Read features.txt and extracts only the measurements on the mean and standard deviation for each measurement. 
 
 * Read activity_labels.txt and applies descriptive activity names to name the activities in the data set:
-	+sitting
-	+standing
-	+laying
-	+walking
-	+walkingupstairs
-	+walkingdownstairs
+```
+	sitting
+	standing
+	laying
+	walking
+	walkingupstairs
+	walkingdownstairs
+```
 * The script also appropriately labels the data set with descriptive names,using names in **feature_txt** names (attributes) and all these names are converted to lower case, underscores and brackets () are removed.
 
 * Finally, the script creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject named **final.txt** in repos
