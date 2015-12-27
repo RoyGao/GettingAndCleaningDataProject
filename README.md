@@ -9,7 +9,7 @@ I wrote a script named run_analysis.R which transforms raw dataset as project re
 Prerequisites for this script:
 * You have downloaded UCI dataset and unzipped it
 * You should edit the directory info in **setwd** fun based on your environment
-The script will create a tidy data set named **final.csv** containing the means of all the columns per subject and per activity.
+The script will create a tidy data set named **final.txt** containing the means of all the columns per subject and per activity.
 
 
 
