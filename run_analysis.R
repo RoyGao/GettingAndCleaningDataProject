@@ -43,7 +43,7 @@ all[, 'activity'] <- activity_labels[all[, 'activity'], 2]
 all$activity <- as.factor(all$activity)
 all$subject <- as.factor(all$subject)
 #generate the final dataset  with the average of each variable for each activity and each subject
-final = aggregate(all, by=list(activity = all$activity, subject=all$subject), mean)
+final <- aggregate(all, by=list(activity = all$activity, subject=all$subject), mean)
 final <- final[, 1:88]
 
 write.table(final, "final.txt", sep="\t")
